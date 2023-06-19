@@ -111,6 +111,12 @@ def swap_face(
     converted = convert_to_sd(target_img)
     scale, fn = converted[0], converted[1]
     if model is not None and not scale:
+        if isinstance(source_img, str):  # source_img is a base64 string
+            import base64, io
+            # decode base64 string to bytes
+            img_bytes = base64.b64decode(source_img)
+            # convert bytes to a PIL Image
+            source_img = Image.open(io.BytesIO(img_bytes))
         source_img = cv2.cvtColor(np.array(source_img), cv2.COLOR_RGB2BGR)
         target_img = cv2.cvtColor(np.array(target_img), cv2.COLOR_RGB2BGR)
         source_face = get_face_single(source_img, face_index=0)
