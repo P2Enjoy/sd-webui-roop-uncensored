@@ -16,7 +16,7 @@ Users of this software are expected to use this software responsibly while abidi
 
 To install the extension, follow these steps:
 
-+ In web-ui, go to the "Extensions" tab and use this URL `https://github.com/P2Enjoy/sd-webui-roop` in the "install from URL" tab.
++ In web-ui, go to the "Extensions" tab and use this URL `https://github.com/P2Enjoy/sd-webui-roop-uncensored` in the "install from URL" tab.
 + Restart the UI
 
 On Windows.. just use linux: you're grown up enough to get to serious stuff instead of playing with baby's toys.
